@@ -1,12 +1,10 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import OnboardingMainPage from "./jvd_backup 4-11-22/FreshOnboarding/OnboardingMainPage";
-// import StudentEDucationDetails from "./jvdapplication/StudentEDucationDetails";
-import JvdApplication from "./jvd_backup 4-11-22/JVD_Application/jvdApplication";
-import StudentDetails from "./jvd_backup 4-11-22/JVD_Application/StudentDetails";
-import StudentEDucationDetails from "./jvd_backup 4-11-22/JVD_Application/StudentEDucationDetails";
-import PreRegistartion from "./jvd_backup 4-11-22/PreRegistration/PreRegistration";
-// import Tabs from "./jvdapplication/Tabs";
+import OnboardingMainPage from "./jvd_new onBoarding/FreshOnboarding/OnboardingMainPage";
+import StudentDetails from "./jvd_new onBoarding/JVD_Application/StudentDetails";
+import StudentEDucationDetails from "./jvd_new onBoarding/JVD_Application/StudentEDucationDetails";
+import PreRegistration from "./jvd_new onBoarding/PreRegistration/PreRegistration";
+
 import Dashboard from "./ScholarshipRenewal/Components/Dashboard/Dashboard"
 
 import RenewalStatistics from "./ScholarshipRenewal/Components/Dashboard/RenewalStastics";
@@ -42,17 +40,17 @@ const RoutesComponent = () => (
       
       <Route path="/login" element={<LoginPage></LoginPage>}></Route>
       <Route path="/stuedudtls" element={<StudentEDucationDetails></StudentEDucationDetails>}></Route>
-      {/* <Route path="/jvd" element={<JvdApplication></JvdApplication>}></Route> */}
+     
       <Route path="/stuedu" element={<StudentDetails></StudentDetails>}></Route>
-      <Route path="/" element={<PreRegistartion></PreRegistartion>}></Route>
+      {/* <Route path="/" element={<PreRegistartion></PreRegistartion>}></Route> */}
+      <Route path="/" element={<PreRegistration></PreRegistration>}></Route>
       <Route path="/jvd" element={<OnboardingMainPage></OnboardingMainPage>}></Route>
       
-
-
+</Routes>
+</Router>
 
 
     
-    </Routes>
-  </Router>
+ 
 );
 export default RoutesComponent;
